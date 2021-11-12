@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Box, Container, Heading } from '@chakra-ui/react'
+import { Box, Container, Heading, Image } from '@chakra-ui/react'
 
 const Page: NextPage = () => {
   return (
@@ -13,6 +13,23 @@ const Page: NextPage = () => {
             Ilan Kim
           </Heading>
           <p>Full-stack Developer</p>
+        </Box>
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          textAlign="center"
+        >
+          <Image
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/ilan.JPG"
+            alt="Profile image"
+          />
         </Box>
       </Box>
     </Container>

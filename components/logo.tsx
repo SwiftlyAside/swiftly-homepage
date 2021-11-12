@@ -27,7 +27,7 @@ const Logo = () => {
           <Image src={footPrintImg} width={20} height={20} alt="logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='Gothic A1", sans-serif'
+            fontFamily='"Gothic A1", sans-serif'
             fontWeight="bold"
             ml={3}
           >

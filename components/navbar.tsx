@@ -18,6 +18,7 @@ import {
 import React from 'react'
 import { IoLogoGithub } from 'react-icons/io5'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import ThemeToggleButton from './theme-toggle-button'
 
 type LinkItemProps = LinkProps & {
   href: string
@@ -105,6 +106,7 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
           </LinkItem>
         </Stack>
         <Box flex={1} qlign="right">
+          <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
