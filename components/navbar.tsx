@@ -69,7 +69,7 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxW="container.lg"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -80,12 +80,12 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
           </Heading>
         </Flex>
         <Stack
-          direction={{ base: 'column', md: 'row' }}
-          display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full', md: 'auto' }}
+          direction={{ base: 'column', lg: 'row' }}
+          display={{ base: 'none', lg: 'flex' }}
+          width={{ base: 'full', lg: 'auto' }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, md: 0 }}
+          mt={{ base: 4, lg: 0 }}
         >
           <LinkItem href="/works" path={path}>
             Works
@@ -105,9 +105,9 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
             Source
           </LinkItem>
         </Stack>
-        <Box flex={1} qlign="right">
+        <Box flex={1} align="right">
           <ThemeToggleButton />
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+          <Box ml={2} display={{ base: 'inline-block', lg: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}

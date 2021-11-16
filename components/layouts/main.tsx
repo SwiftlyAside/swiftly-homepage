@@ -18,7 +18,7 @@ const Layout = ({ children, router }: MainLayoutProps) => {
         <title>Ilan Kim - Homepage</title>
       </Head>
       <Navbar path={router.asPath} />
-      <Container maxW="container.md" pt={14}>
+      <Container maxW="container.lg" pt={14}>
         {children}
       </Container>
     </Box>
