@@ -15,7 +15,8 @@ import {
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page: NextPage = () => {
   return (
@@ -69,7 +70,7 @@ const Page: NextPage = () => {
         </Paragraph>
         <Box align="center" my={4}>
           <Link href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="cyan">
               My portfolio
             </Button>
           </Link>
@@ -79,6 +80,23 @@ const Page: NextPage = () => {
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
+        <BioSection>
+          <BioYear>1994</BioYear>
+          Born in Busan (부산), South Korea.
+        </BioSection>
+        <BioSection>
+          <BioYear>2019</BioYear>
+          Graduated Bachelor&apos;s Degree in Computer Science and Engineering
+          in Hanyang University ERACA Campus. (한양대학교 ERICA캠퍼스)
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Worked at Epart (이파트)
+        </BioSection>
+        <BioSection>
+          <BioYear>2021 to present</BioYear>
+          Works at Wikiwiki (위키위키)
+        </BioSection>
       </Section>
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -89,10 +107,24 @@ const Page: NextPage = () => {
             <ChakraLink href="https://github.com/SwiftlyAside" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="cyan"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
                 @SwiftlyAside
+              </Button>
+            </ChakraLink>
+          </ListItem>
+          <ListItem>
+            <ChakraLink
+              href="https://www.linkedin.com/in/찬수-김-b4a032154/"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="cyan"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
+              >
+                @김찬수
               </Button>
             </ChakraLink>
           </ListItem>
