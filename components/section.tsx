@@ -1,12 +1,16 @@
-import { motion } from 'framer-motion'
-import { chakra, shouldForwardProp } from '@chakra-ui/react'
+import { isValidMotionProp, motion } from 'framer-motion'
+import { chakra, forwardRef } from '@chakra-ui/react'
 import React from 'react'
 
-const StyledDiv = chakra(motion.div, {
-  shouldForwardProp(prop: string): boolean {
-    return shouldForwardProp(prop) || prop === 'transition'
-  },
-})
+const StyledDiv = motion(
+  forwardRef((props, ref) => {
+    const chakraProps = Object.fromEntries(
+      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
+    )
+
+    return <chakra.div ref={ref} {...chakraProps} />
+  })
+)
 
 type SectionProps = {
   children: React.ReactNode
