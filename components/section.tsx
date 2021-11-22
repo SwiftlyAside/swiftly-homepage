@@ -14,7 +14,7 @@ const StyledDiv = motion(
 
 type SectionProps = {
   children: React.ReactNode
-  delay: number
+  delay?: number
 }
 
 const Section = ({ children, delay = 0 }: SectionProps) => (

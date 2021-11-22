@@ -6,9 +6,9 @@ import { Global } from '@emotion/react'
 
 type GridItemProps = {
   children: React.ReactNode
-  href: string
+  href?: string
   title: string
-  thumbnail: string
+  thumbnail: StaticImageData
 }
 
 type WorkGridItemProps = GridItemProps & {
@@ -30,7 +30,7 @@ export const GridItem = ({
         placeholder="blur"
         loading="lazy"
       />
-      <LinkOverlay href={href} target="_blank">
+      <LinkOverlay href={href ?? '#'} target="_blank">
         <Text mt={2}>{title}</Text>
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
