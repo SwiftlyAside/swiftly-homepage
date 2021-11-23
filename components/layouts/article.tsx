@@ -10,7 +10,7 @@ const variants = {
 
 type ArticleProps = {
   children: React.ReactNode
-  title: string
+  title?: string
 }
 
 const Layout = ({ children, title }: ArticleProps) => (

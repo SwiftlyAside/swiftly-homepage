@@ -2,6 +2,7 @@ import Layout from '../components/layouts/article'
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../components/grid-item'
 import thumbKibex from '../public/images/works/kibex.png'
+import thumbNormalPlayer from '../public/images/works/normal-player_01.png'
 import Section from '../components/section'
 
 const Works = () => (
@@ -21,7 +22,7 @@ const Works = () => (
         <Section>
           <WorkGridItem
             title="NormalPlayer"
-            thumbnail={thumbKibex}
+            thumbnail={thumbNormalPlayer}
             id="normal-player"
           >
             NormalPlayer is an Android application for managing and playing the
