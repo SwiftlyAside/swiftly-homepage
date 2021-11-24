@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { SomethingContainer, SomethingSpinner } from './voxel-something-loader'
+import { VoxelContainer, VoxelSpinner } from './voxel-something-loader'
 
 function easeOutCirc(x: number) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -12,6 +12,10 @@ function easeOutBack(x: number) {
   const c1 = 1.70158
   const c3 = c1 + 1
   return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2)
+}
+
+function easeOutExpo(x: number) {
+  return x === 1 ? 1 : 1 - Math.pow(2, -10 * x)
 }
 
 const VoxelSomething = () => {
@@ -79,7 +83,7 @@ const VoxelSomething = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/dog.glb', {
+      loadGLTFModel(scene, '/something.glb', {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {
@@ -95,10 +99,11 @@ const VoxelSomething = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition
-          const rotSpeed = -easeOutBack(frame / 120) * Math.PI * 20
+          const rotSpeed = -easeOutExpo(frame / 120) * Math.PI * 20
 
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
+          camera.position.y = 10
           camera.position.z =
             p.x * -Math.sin(rotSpeed) + p.z * Math.cos(rotSpeed)
           camera.lookAt(target)
@@ -125,9 +130,9 @@ const VoxelSomething = () => {
   }, [renderer, handleWindowResize])
 
   return (
-    <SomethingContainer ref={refContainer}>
-      {loading && <SomethingSpinner />}
-    </SomethingContainer>
+    <VoxelContainer ref={refContainer}>
+      {loading && <VoxelSpinner />}
+    </VoxelContainer>
   )
 }
 

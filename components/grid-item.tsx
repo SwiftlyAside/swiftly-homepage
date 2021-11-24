@@ -45,7 +45,7 @@ export const WorkGridItem = ({
   thumbnail,
 }: WorkGridItemProps) => (
   <Box>
-    <Link href={`/works/${id}`}>
+    <Link href={`/works/${id}`} passHref>
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}

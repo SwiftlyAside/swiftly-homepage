@@ -1,7 +1,7 @@
 import { Box, Spinner } from '@chakra-ui/react'
-import { forwardRef } from 'react'
+import React, { forwardRef, HTMLProps } from 'react'
 
-export const SomethingSpinner = () => (
+export const VoxelSpinner = () => (
   <Spinner
     size="xl"
     position="absolute"
@@ -12,28 +12,31 @@ export const SomethingSpinner = () => (
   />
 )
 
-export const SomethingContainer = forwardRef<HTMLDivElement>(
-  ({ children }, ref) => (
-    <Box
-      ref={ref}
-      className="voxel-something"
-      m="auto"
-      mt={['-20px', '-60px', '-120px']}
-      mb={['-40px', '-140px', '-200px']}
-      w={[280, 480, 640]}
-      h={[280, 480, 640]}
-      position="relative"
-    >
-      {children}
-    </Box>
-  )
-)
+export const VoxelContainer = forwardRef<
+  HTMLDivElement,
+  HTMLProps<HTMLDivElement>
+>(({ children }, ref) => (
+  <Box
+    ref={ref}
+    className="voxel-something"
+    m="auto"
+    mt={['-20px', '-60px', '-120px']}
+    mb={['-40px', '-140px', '-200px']}
+    w={[280, 480, 640]}
+    h={[280, 480, 640]}
+    position="relative"
+  >
+    {children}
+  </Box>
+))
+
+VoxelContainer.displayName = 'VoxelContainer'
 
 const Loader = () => {
   return (
-    <SomethingContainer>
-      <SomethingSpinner />
-    </SomethingContainer>
+    <VoxelContainer>
+      <VoxelSpinner />
+    </VoxelContainer>
   )
 }
 

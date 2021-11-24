@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -66,13 +66,13 @@ const Page: NextPage = () => {
             to learn new things and ambitious to apply them in real life. When
             not online, he goes to watch football games. He produced websites
             for{' '}
-            <Link href="/works/beerexpo">
+            <Link href="/works/beerexpo" passHref>
               <ChakraLink>KIBEX</ChakraLink>
             </Link>
             .
           </Paragraph>
           <Box align="center" my={4}>
-            <Link href="/works">
+            <Link href="/works" passHref>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="cyan">
                 My portfolio
               </Button>
@@ -107,14 +107,12 @@ const Page: NextPage = () => {
           </Heading>
           <List>
             <ListItem>
-              <ChakraLink
-                href="https://github.com/SwiftlyAside"
-                target="_blank"
-              >
+              <ChakraLink href="https://github.com/SwiftlyAside" isExternal>
                 <Button
                   variant="ghost"
                   colorScheme="cyan"
                   leftIcon={<Icon as={IoLogoGithub} />}
+                  rightIcon={<ExternalLinkIcon mx="2px" />}
                 >
                   @SwiftlyAside
                 </Button>
@@ -123,12 +121,13 @@ const Page: NextPage = () => {
             <ListItem>
               <ChakraLink
                 href="https://www.linkedin.com/in/찬수-김-b4a032154/"
-                target="_blank"
+                isExternal
               >
                 <Button
                   variant="ghost"
                   colorScheme="cyan"
                   leftIcon={<Icon as={IoLogoLinkedin} />}
+                  rightIcon={<ExternalLinkIcon mx="2px" />}
                 >
                   @김찬수
                 </Button>
