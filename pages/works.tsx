@@ -13,6 +13,16 @@ const Works = () => (
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
+          <WorkGridItem
+            title="NormalPlayer"
+            thumbnail={thumbNormalPlayer}
+            id="normal-player"
+          >
+            NormalPlayer is an Android application for managing and playing the
+            music.
+          </WorkGridItem>
+        </Section>
+        <Section>
           <WorkGridItem title="KIBEX" thumbnail={thumbKibex} id="beerexpo">
             KIBEX is a web application for managing the KIBEX (Korea
             International Beer Expo) website. It is a web application built with
@@ -21,12 +31,12 @@ const Works = () => (
         </Section>
         <Section>
           <WorkGridItem
-            title="NormalPlayer"
-            thumbnail={thumbNormalPlayer}
-            id="normal-player"
+            title="PlayKalimba"
+            thumbnail={thumbKibex}
+            id="play-kalimba"
           >
-            NormalPlayer is an Android application for managing and playing the
-            music.
+            Play Kalimba is a rhythm game for mobile phones. It was built with
+            Unity.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
