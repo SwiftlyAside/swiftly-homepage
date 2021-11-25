@@ -1,12 +1,11 @@
 import Layout from '../../components/layouts/article'
 import {
   Badge,
-  Center,
   Container,
-  Image,
   Link,
   List,
   ListItem,
+  SimpleGrid,
   UnorderedList,
 } from '@chakra-ui/react'
 import { Meta, Title, WorkImage } from '../../components/work'
@@ -16,34 +15,12 @@ const Work = () => (
   <Layout title="NormalPlayer">
     <Container maxW="container.lg">
       <Title>
-        NormalPlayer <Badge>2017-Current</Badge>
+        NormalPlayer <Badge>2017</Badge>
       </Title>
-      <Center my={6}>
-        <Image
-          src="https://www.beerexpo.kr/design/default/img/main/logo.png"
-          alt="logo"
-        />
-      </Center>
-      <P>NormalPlayer</P>
+      <P>NormalPlayer는 안드로이드용 로컬 음악플레이어입니다.</P>
       <UnorderedList ml={4} my={4}>
-        <ListItem>ファイル転送がサイズ制限無く高速に出来ます。</ListItem>
-        <ListItem>複数のコンピュータ間で同時に通信が出来ます。</ListItem>
-        <ListItem>
-          簡単接続機能により、面倒な接続作業を自動で行います。
-        </ListItem>
-        <ListItem>
-          一つのポート開放だけで、様々な通信が出来る強力なプロトコル。
-        </ListItem>
-        <ListItem>
-          IM機能を装備しています。会話中に写真を表示したりもできます。
-        </ListItem>
-        <ListItem>
-          ファイル共有機能で、設定した公開フォルダを相手に見せることが出来ます。
-        </ListItem>
-        <ListItem>MSN/Windowsメッセンジャーからの招待で接続できます。</ListItem>
-        <ListItem>
-          画面転送機能で、相手に自分のデスクトップを見せることが出来ます。
-        </ListItem>
+        <ListItem>안드로이드 기기내의 음악 재생.</ListItem>
+        <ListItem>재생목록 관리 기능.</ListItem>
       </UnorderedList>
       <List ml={4} my={4}>
         <ListItem>
@@ -52,15 +29,27 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Flutter</span>
+          <span>Java</span>
         </ListItem>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://beerexpo.kr">Coming soon</Link>
+          <Link href="#">Coming soon</Link>
         </ListItem>
       </List>
-
-      <WorkImage src="/images/works/kibex.png" alt="kibex" />
+      <SimpleGrid columns={3} gap={2}>
+        <WorkImage
+          src="/images/works/normal-player_01.png"
+          alt="normal-player"
+        />
+        <WorkImage
+          src="/images/works/normal-player_02.png"
+          alt="normal-player"
+        />
+        <WorkImage
+          src="/images/works/normal-player_03.png"
+          alt="normal-player"
+        />
+      </SimpleGrid>
     </Container>
   </Layout>
 )

@@ -35,10 +35,11 @@ const LinkItem = ({
   ...props
 }: LinkItemProps) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
   return (
     <Link href={href} passHref>
       <ChakraLink
+        borderRadius="md"
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
@@ -90,9 +91,6 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
           <LinkItem
             href="https://github.com/SwiftlyAside/swiftly-homepage"
             path={path}
@@ -121,9 +119,6 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
                 </Link>
                 <Link href="/works" passHref>
                   <MenuItem as={ChakraLink}>Works</MenuItem>
-                </Link>
-                <Link href="/posts" passHref>
-                  <MenuItem as={ChakraLink}>Posts</MenuItem>
                 </Link>
                 <MenuItem
                   as={ChakraLink}
