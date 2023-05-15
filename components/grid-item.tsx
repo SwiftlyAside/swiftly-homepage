@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import { Global } from '@emotion/react'
 
