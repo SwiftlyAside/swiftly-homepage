@@ -4,15 +4,15 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { VoxelContainer, VoxelSpinner } from './voxel-something-loader'
 
-function easeOutCirc(x: number) {
-  return Math.sqrt(1 - Math.pow(x - 1, 4))
-}
-
-function easeOutBack(x: number) {
-  const c1 = 1.70158
-  const c3 = c1 + 1
-  return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2)
-}
+// function easeOutCirc(x: number) {
+//   return Math.sqrt(1 - Math.pow(x - 1, 4))
+// }
+//
+// function easeOutBack(x: number) {
+//   const c1 = 1.70158
+//   const c3 = c1 + 1
+//   return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2)
+// }
 
 function easeOutExpo(x: number) {
   return x === 1 ? 1 : 1 - Math.pow(2, -10 * x)
@@ -22,6 +22,7 @@ const VoxelSomething = () => {
   const refContainer = useRef<HTMLDivElement>(null)
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState<THREE.WebGLRenderer | null>(null)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_camera, setCamera] = useState<THREE.OrthographicCamera | null>(null)
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
   const [initialCameraPosition] = useState(
@@ -31,7 +32,8 @@ const VoxelSomething = () => {
       20 * Math.cos(0.2 * Math.PI)
     )
   )
-  const [scene, setScene] = useState<THREE.Scene>(new THREE.Scene())
+  const [scene] = useState<THREE.Scene>(new THREE.Scene())
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_controls, setControls] = useState<OrbitControls>()
 
   const handleWindowResize = useCallback(() => {

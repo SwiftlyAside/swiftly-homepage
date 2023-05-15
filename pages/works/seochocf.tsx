@@ -1,9 +1,7 @@
 import Layout from '../../components/layouts/article'
 import {
   Badge,
-  Center,
   Container,
-  Image,
   Link,
   List,
   ListItem,

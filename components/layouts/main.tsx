@@ -3,18 +3,16 @@ import { Box, Container } from '@chakra-ui/react'
 import Head from 'next/head'
 import Navbar from '../navbar'
 import { Router } from 'next/router'
-import dynamic from 'next/dynamic'
-import VoxelSomethingLoader from '../voxel-something-loader'
 
 type MainLayoutProps = {
   children: React.ReactNode
   router: Router
 }
 
-const LazyVoxel = dynamic(() => import('../voxel-something'), {
-  ssr: false,
-  loading: () => <VoxelSomethingLoader />,
-})
+// const LazyVoxel = dynamic(() => import('../voxel-something'), {
+//   ssr: false,
+//   loading: () => <VoxelSomethingLoader />,
+// })
 
 const Layout = ({ children, router }: MainLayoutProps) => {
   return (
