@@ -71,9 +71,9 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
         display="flex"
         p={2}
         maxW="container.lg"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        // wrap="wrap"
+        alignItems="center"
+        justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -103,7 +103,7 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
             Source
           </LinkItem>
         </Stack>
-        <Box flex={1} align="right">
+        <Box flex={1}>
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', lg: 'none' }}>
             <Menu isLazy id="navbar-menu">

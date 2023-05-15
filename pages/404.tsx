@@ -13,7 +13,7 @@ const NotFound = () => (
     <Heading as="h1">404</Heading>
     <Text>Page not found</Text>
     <Divider my={6} />
-    <Box my={6} align="center">
+    <Box my={6} alignItems="center">
       <Link href="/" passHref>
         <Button colorScheme="cyan">Go to home page</Button>
       </Link>
