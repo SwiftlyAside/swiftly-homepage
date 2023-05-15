@@ -72,7 +72,7 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
         p={2}
         maxW="container.lg"
         // wrap="wrap"
-        alignItems="center"
+        // align="center"
         justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
@@ -95,7 +95,7 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
             href="https://github.com/SwiftlyAside/swiftly-homepage"
             path={path}
             display="inline-flex"
-            alignItems="center"
+            // align="center"
             style={{ gap: 4 }}
             pl={2}
           >

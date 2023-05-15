@@ -24,11 +24,12 @@ const Page: NextPage = () => {
     <Layout>
       <Container maxW="container.lg">
         <Box
+          as="div"
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
           mb={6}
-          align="center"
+          // align="center"
         >
           Hello, I&apos;m a full-stack developer based in South Korea.
         </Box>
@@ -62,16 +63,21 @@ const Page: NextPage = () => {
             Work
           </Heading>
           <Paragraph>
-            Ilan Kim is a full-stack developer based in South Korea. He is eager
-            to learn new things and ambitious to apply them in real life. When
-            not online, he goes to watch football games. He produced websites
-            for{' '}
-            <Link href="/works/beerexpo" passHref>
-              <ChakraLink>KIBEX</ChakraLink>
-            </Link>
-            .
+            저는 웹 개발과 게임 개발을 주로 하고 있습니다.
+            <br />
+            새로운 기술의 습득에 거리낌이 없으며, 다양한 스택의 제 포트폴리오가
+            그것을 대변합니다.
+            <br />
+            현재 저는{' '}
+            <ChakraLink href="https://wiki2.co.kr/" isExternal>
+              위키위키
+            </ChakraLink>
+            에서 개발자로 일하고 있습니다.
           </Paragraph>
-          <Box align="center" my={4}>
+          <Box
+            // align="center"
+            my={4}
+          >
             <Link href="/works" passHref>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="cyan">
                 My portfolio
