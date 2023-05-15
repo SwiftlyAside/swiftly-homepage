@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { Meta, Title, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
-import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from 'react-icons/all'
+import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from 'react-icons/io5'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Work = () => (
