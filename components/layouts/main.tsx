@@ -28,8 +28,8 @@ const Layout = ({ children, router }: MainLayoutProps) => {
         <title>Ilan Kim - Homepage</title>
       </Head>
       <Navbar path={router.asPath} />
-      <Container maxW="container.lg" pt={14}>
-        <LazyVoxel />
+      <Container maxW="container.lg" pt={24}>
+        {/*<LazyVoxel />*/}
         {children}
       </Container>
     </Box>

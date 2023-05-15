@@ -24,26 +24,9 @@ const Work = () => (
           alt="logo"
         />
       </Center>
-      <P>Korea International Beer Expo Website</P>
+      <P>비어엑스포(KIBEX) 웹사이트</P>
       <UnorderedList ml={4} my={4}>
-        <ListItem>ファイル転送がサイズ制限無く高速に出来ます。</ListItem>
-        <ListItem>複数のコンピュータ間で同時に通信が出来ます。</ListItem>
-        <ListItem>
-          簡単接続機能により、面倒な接続作業を自動で行います。
-        </ListItem>
-        <ListItem>
-          一つのポート開放だけで、様々な通信が出来る強力なプロトコル。
-        </ListItem>
-        <ListItem>
-          IM機能を装備しています。会話中に写真を表示したりもできます。
-        </ListItem>
-        <ListItem>
-          ファイル共有機能で、設定した公開フォルダを相手に見せることが出来ます。
-        </ListItem>
-        <ListItem>MSN/Windowsメッセンジャーからの招待で接続できます。</ListItem>
-        <ListItem>
-          画面転送機能で、相手に自分のデスクトップを見せることが出来ます。
-        </ListItem>
+        <ListItem>PHP 기반 웹 구축</ListItem>
       </UnorderedList>
       <List ml={4} my={4}>
         <ListItem>

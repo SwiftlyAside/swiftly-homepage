@@ -35,9 +35,9 @@ const Page: NextPage = () => {
         <Box display={{ lg: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Ilan Kim
+              김찬수 (Ilan Kim)
             </Heading>
-            <p>Full-stack Developer</p>
+            <p>Web & Game Developer</p>
           </Box>
           <Box
             flexShrink={0}
@@ -90,15 +90,16 @@ const Page: NextPage = () => {
           <BioSection>
             <BioYear>2019</BioYear>
             Graduated Bachelor&apos;s Degree in Computer Science and Engineering
-            in Hanyang University ERACA Campus. (한양대학교 ERICA캠퍼스)
+            in Hanyang University ERACA Campus. (한양대학교 ERICA캠퍼스
+            소프트웨어공학부 컴퓨터전공 학사 졸업)
           </BioSection>
           <BioSection>
-            <BioYear>2020</BioYear>
+            <BioYear>2020 to 2021</BioYear>
             Worked at Epart (이파트)
           </BioSection>
           <BioSection>
             <BioYear>2021 to present</BioYear>
-            Works at Wikiwiki (위키위키)
+            Works at Wikiwiki inc (위키위키)
           </BioSection>
         </Section>
         <Section delay={0.3}>
