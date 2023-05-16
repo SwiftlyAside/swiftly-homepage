@@ -24,6 +24,7 @@ const Work = () => (
       <P>스마트칼림바는 칼림바 튜닝을 도와주는 모바일 애플리케이션입니다.</P>
       <UnorderedList ml={4} my={4}>
         <ListItem>스마트칼림바 Android/iOS 버전 유지보수</ListItem>
+        <br />
         <ListItem>공통</ListItem>
         <UnorderedList>
           <ListItem>튜닝가능 음계 범위 확장 (17 to 23)</ListItem>
@@ -31,6 +32,7 @@ const Work = () => (
           <ListItem>전면광고 추가를 위한 Admob 연동</ListItem>
           <ListItem>영어 지원 추가</ListItem>
         </UnorderedList>
+        <br />
         <ListItem>Android</ListItem>
         <UnorderedList>
           <ListItem>사운드 및 진동효과 관리 클래스 구현</ListItem>
@@ -39,6 +41,7 @@ const Work = () => (
           </ListItem>
           <ListItem>Google Billing Library 5.0.0 업데이트</ListItem>
         </UnorderedList>
+        <br />
         <ListItem>iOS</ListItem>
         <UnorderedList>
           <ListItem>오디오 라이브러리 교체 (EZAudio to AudioKit)</ListItem>

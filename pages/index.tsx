@@ -29,7 +29,7 @@ const Page: NextPage = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
           mb={6}
-          // align="center"
+          textAlign="center"
         >
           Hello, I&apos;m a full-stack developer based in South Korea.
         </Box>
@@ -77,10 +77,7 @@ const Page: NextPage = () => {
             </ChakraLink>
             에서 개발자로 일하고 있습니다.
           </Paragraph>
-          <Box
-            // align="center"
-            my={4}
-          >
+          <Box textAlign="center" my={4}>
             <Link href="/works" passHref>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="cyan">
                 My portfolio

@@ -18,7 +18,6 @@ import {
 import React from 'react'
 import { IoLogoGithub } from 'react-icons/io5'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
 
 type LinkItemProps = LinkProps & {
   href: string
@@ -71,8 +70,8 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
         display="flex"
         p={2}
         maxW="container.lg"
-        // wrap="wrap"
-        // align="center"
+        // textWrap="wrap"
+        textAlign="center"
         justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
@@ -95,7 +94,7 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
             href="https://github.com/SwiftlyAside/swiftly-homepage"
             path={path}
             display="inline-flex"
-            // align="center"
+            textAlign="center"
             style={{ gap: 4 }}
             pl={2}
           >
@@ -103,8 +102,9 @@ const Navbar = ({ path, ...props }: NavbarProps) => {
             Source
           </LinkItem>
         </Stack>
-        <Box flex={1}>
-          <ThemeToggleButton />
+        <Box flex={1} textAlign="right">
+          {/* 토글 안되는 현상 있음 */}
+          {/*<ThemeToggleButton />*/}
           <Box ml={2} display={{ base: 'inline-block', lg: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
