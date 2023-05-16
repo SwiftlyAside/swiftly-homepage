@@ -19,10 +19,25 @@ const Work = () => (
       <P>풀스코어 웹사이트</P>
       <UnorderedList ml={4} my={4}>
         <ListItem>PHP 기반 웹사이트 유지보수</ListItem>
-        <ListItem>정품등록관리 플러그인 개발</ListItem>
+        <br />
+        <ListItem>
+          Legacy to Codeigniter3 전환 작업 <Badge>2022-2023</Badge>
+        </ListItem>
         <UnorderedList>
-          <ListItem>정품등록인원 관리기능</ListItem>
-          <ListItem>악기 브랜드 목록 관리기능</ListItem>
+          <ListItem>기존 PHP코드를 Codeigniter3로 전환</ListItem>
+          <ListItem>유지보수성 및 이식성 확보가 목적</ListItem>
+        </UnorderedList>
+        <br />
+        <ListItem>
+          아티스트 미니샵 리뉴얼작업 <Badge>2022</Badge>
+        </ListItem>
+        <UnorderedList>
+          <ListItem>Bulma css framework를 커스텀하여 프론트 구현</ListItem>
+          <ListItem>아티스트 미니샵 헤더이미지 섹션 추가</ListItem>
+          <ListItem>아티스트 픽 섹션 추가</ListItem>
+          <UnorderedList>
+            <ListItem>뮤지션마켓 앰버서더 API를 호출하는 모델 구현</ListItem>
+          </UnorderedList>
         </UnorderedList>
       </UnorderedList>
       <List ml={4} my={4}>
@@ -32,7 +47,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>PHP5.5, Codeigniter3, MySQL</span>
+          <span>PHP5.5, Codeigniter3, MySQL, scss</span>
         </ListItem>
         <ListItem>
           <Meta>Website</Meta>

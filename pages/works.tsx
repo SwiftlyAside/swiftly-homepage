@@ -10,6 +10,7 @@ import thumbSunsa from '../public/images/works/sunsa_eyecatch.png'
 import thumbWiki2 from '../public/images/works/wiki2_eyecatch.png'
 import thumbMusicianmarket from '../public/images/works/musicianmarket_eyecatch.png'
 import thumbFullscore from '../public/images/works/fullscore_eyecatch.png'
+import thumbTruecolors from '../public/images/works/truecolors_eyecatch.jpg'
 import Section from '../components/section'
 
 const Works = () => (
@@ -108,11 +109,10 @@ const Works = () => (
         <Section>
           <WorkGridItem
             title="Truecolors"
-            thumbnail={thumbPlayKalimba}
+            thumbnail={thumbTruecolors}
             id="truecolors"
           >
-            Truecolors is a horror game for pc. It was built with Unreal Engine
-            4.
+            Truecolors는 Unreal Engine 4 기반 3D 스릴러 게임입니다.
           </WorkGridItem>
         </Section>
         <Section>
