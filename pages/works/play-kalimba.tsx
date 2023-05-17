@@ -7,9 +7,10 @@ import {
   Link,
   List,
   ListItem,
+  SimpleGrid,
   UnorderedList,
 } from '@chakra-ui/react'
-import { Meta, Title } from '../../components/work'
+import { Meta, Title, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
 import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from 'react-icons/io5'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -26,6 +27,7 @@ const Work = () => (
       </P>
       <UnorderedList ml={4} my={4}>
         <ListItem>플레이칼림바 Android/iOS 버전 개발</ListItem>
+        <br />
         <ListItem>게임 메인로직 구현</ListItem>
         <UnorderedList>
           <ListItem>
@@ -36,6 +38,7 @@ const Work = () => (
             MIDI 콘텐츠 변환기는 Koreographer 에셋을 구매하여 활용
           </ListItem>
         </UnorderedList>
+        <br />
         <ListItem>
           Google Cloud Functions를 이용한 백엔스 기능 개발 (Runtime: Node.js)
         </ListItem>
@@ -53,7 +56,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Unity,C#,Node.js,Typescript</span>
+          <span>Unity, C#, Node.js, Typescript</span>
         </ListItem>
         <ListItem>
           <Meta>App Store</Meta>
@@ -81,6 +84,20 @@ const Work = () => (
           </Link>
         </ListItem>
       </List>
+      <SimpleGrid columns={1} gap={2}>
+        <WorkImage
+          src="/images/works/play-kalimba_1.png"
+          alt="play-kalimba_1"
+        />
+        <WorkImage
+          src="/images/works/play-kalimba_2.png"
+          alt="play-kalimba_2"
+        />
+        <WorkImage
+          src="/images/works/play-kalimba_3.png"
+          alt="play-kalimba_3"
+        />
+      </SimpleGrid>
     </Container>
   </Layout>
 )

@@ -88,7 +88,7 @@ const Work = () => (
           </Link>
         </ListItem>
       </List>
-      <SimpleGrid columns={2} gap={2}>
+      <SimpleGrid columns={1} gap={2}>
         <WorkImage
           src="/images/works/smart-kalimba_02.png"
           alt="smart-kalimba"
