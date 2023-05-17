@@ -142,6 +142,24 @@ const Page: NextPage = () => {
             </ListItem>
           </List>
         </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Special Thanks
+          </Heading>
+          <List>
+            <ListItem>
+              <ChakraLink href="https://www.craftz.dog" isExternal>
+                <Button
+                  variant="ghost"
+                  colorScheme="cyan"
+                  rightIcon={<ExternalLinkIcon mx="2px" />}
+                >
+                  @craftzdog
+                </Button>
+              </ChakraLink>
+            </ListItem>
+          </List>
+        </Section>
       </Container>
     </Layout>
   )
