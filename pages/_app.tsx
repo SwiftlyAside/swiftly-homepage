@@ -4,6 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import theme from '../lib/theme'
+import { Analytics } from '@vercel/analytics/react'
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <Layout router={router}>
         <AnimatePresence exitBeforeEnter initial={true}>
           <Component {...pageProps} key={router.route} />
+          <Analytics />
         </AnimatePresence>
       </Layout>
     </ChakraProvider>
