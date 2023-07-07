@@ -72,8 +72,11 @@ const Page: NextPage = () => {
             목표로 하고 있습니다.
             <br />
             현재 저는{' '}
-            <ChakraLink href="https://wiki2.co.kr/" isExternal>
-              위키위키
+            <ChakraLink
+              href="https://www.rocketpunch.com/companies/0xseoul"
+              isExternal
+            >
+              프롬서울
             </ChakraLink>
             에서 개발자로 일하고 있습니다.
           </Paragraph>
@@ -104,8 +107,12 @@ const Page: NextPage = () => {
             Worked at Epart (이파트)
           </BioSection>
           <BioSection>
-            <BioYear>2021 to present</BioYear>
+            <BioYear>2021 to 2023</BioYear>
             Works at Wikiwiki inc (위키위키)
+          </BioSection>
+          <BioSection>
+            <BioYear>2023 to present</BioYear>
+            Works at Fronseoul inc (위키위키)
           </BioSection>
         </Section>
         <Section delay={0.3}>
