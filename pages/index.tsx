@@ -112,7 +112,7 @@ const Page: NextPage = () => {
           </BioSection>
           <BioSection>
             <BioYear>2023 to present</BioYear>
-            Works at Fronseoul inc (위키위키)
+            Works at Fronseoul inc (프롬서울)
           </BioSection>
         </Section>
         <Section delay={0.3}>
